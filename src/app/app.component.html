@@ -1,8 +1,9 @@
 
 <div class="container text-center">
   <h1 class="pt-5">Dados App</h1>
-  <button class="btn btn-success btn-lg">Tirar Dados</button>
+  <button class="btn btn-success btn-lg" (click)="tirarDados()">Tirar Dados</button>
   <br>
-  <img class="image-dice" src="../assets/img/dice1.png">
-  <img class="image-dice" src="../assets/img/dice2.png">
+  <img class="image-dice" [src]="dadoIzda">
+  <img class="image-dice" [src]="dadoDcha">
+  <h1 *ngIf="numero1 === numero2"><span class="badge bg-success">YOU WIN!!</span></h1>
 </div>
